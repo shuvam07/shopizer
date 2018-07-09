@@ -54,9 +54,6 @@ public class ShoppingCartDataPopulator extends AbstractDataPopulator<ShoppingCar
 				return imageUtils;
 			}
 		
-		
-		
-		
 			public void setimageUtils(ImageFilePath imageUtils) {
 				this.imageUtils = imageUtils;
 			}

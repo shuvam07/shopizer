@@ -1021,7 +1021,7 @@ $(document).ready(function() {
 														<label><s:message code="label.generic.streetaddress" text="Street address"/></label>
 										    				<div class="controls"> 
 										    					<s:message code="NotEmpty.customer.billing.address" text="Address is required" var="msgAddress"/>
-										      					<form:input id="customer.billing.address" cssClass="input-xxlarge required form-control form-control-lg" path="customer.billing.address" title="${msgAddress}"/>
+										      					<form:input id="customer.billing.address" cssClass="input-xxlarge  form-control form-control-lg" path="customer.billing.address" title="${msgAddress}"/>
 										      					<form:errors path="customer.billing.address" cssClass="error" />
 												    			<span id="error-customer.billing.address" class="error"></span>
 										    				</div> 
@@ -1036,7 +1036,7 @@ $(document).ready(function() {
 															<label><s:message code="label.generic.city" text="City"/></label>
 											    				<div class="controls"> 
 											    					<s:message code="NotEmpty.customer.billing.city" text="City is required" var="msgCity"/>
-											      					<form:input id="customer.billing.city" cssClass="input-large required form-control form-control-lg" path="customer.billing.city" title="${msgCity}"/>
+											      					<form:input id="customer.billing.city" cssClass="input-large  form-control form-control-lg" path="customer.billing.city" title="${msgCity}"/>
 											      					<form:errors path="customer.billing.city" cssClass="error" />
 												    				<span id="error-customer.billing.city" class="error"></span>
 											    				</div> 
@@ -1047,7 +1047,7 @@ $(document).ready(function() {
 															<label><s:message code="label.generic.postalcode" text="Postal code"/></label>
 											    				<div class="controls"> 
 											    					<s:message code="NotEmpty.customer.billing.postalCode" text="Postal code is required" var="msgPostalCode"/>
-											      					<form:input id="billingPostalCode" cssClass="input-large required billing-postalCode form-control form-control-lg" path="customer.billing.postalCode" title="${msgPostalCode}"/>
+											      					<form:input id="billingPostalCode" cssClass="input-large  billing-postalCode form-control form-control-lg" path="customer.billing.postalCode" title="${msgPostalCode}"/>
 																	<form:errors path="customer.billing.postalCode" cssClass="error" />
 												    				<span id="error-customer.billing.postalCode" class="error"></span>
 											    				</div> 
@@ -1063,7 +1063,7 @@ $(document).ready(function() {
 											    		<div class="controls"> 
 												       			<form:select cssClass="zone-list form-control form-control-lg" id="billingStateList" path="customer.billing.zone"/>
 											                    <s:message code="NotEmpty.customer.billing.stateProvince" text="State / Province is required" var="msgStateProvince"/>
-											                    <form:input  class="input-large required form-control form-control-lg" id="billingStateProvince"  maxlength="100" name="billingStateProvince" path="customer.billing.stateProvince" title="${msgStateProvince}"/>
+											                    <form:input  class="input-large  form-control form-control-lg" id="billingStateProvince"  maxlength="100" name="billingStateProvince" path="customer.billing.stateProvince" title="${msgStateProvince}"/>
 											                    <form:errors path="customer.billing.stateProvince" cssClass="error" />
 												    			<span id="error-customer.billing.stateProvince" class="error"></span> 
 											    		</div> 
@@ -1163,7 +1163,7 @@ $(document).ready(function() {
 														<label><s:message code="label.customer.shipping.streetaddress" text="Shipping street address"/></label>
 										    				<div class="controls"> 
 										    					<s:message code="NotEmpty.customer.shipping.address" text="Shipping street address should not be empty" var="msgShippingAddress"/>
-										      					<form:input id="customer.delivery.address" cssClass="input-xxlarge required form-control form-control-lg" path="customer.delivery.address" title="${msgShippingAddress}"/>
+										      					<form:input id="customer.delivery.address" cssClass="input-xxlarge  form-control form-control-lg" path="customer.delivery.address" title="${msgShippingAddress}"/>
 										    				</div> 
 										  			</div> 
 										  		</div>
@@ -1176,7 +1176,7 @@ $(document).ready(function() {
 															<label><s:message code="label.customer.shipping.city" text="Shipping city"/></label>
 											    				<div class="controls">
 											    					<s:message code="NotEmpty.customer.shipping.city" text="Shipping city should not be empty" var="msgShippingCity"/> 
-											      					<form:input id="customer.delivery.city" cssClass="input-large required form-control form-control-lg" path="customer.delivery.city" title="${msgShippingCity}"/>
+											      					<form:input id="customer.delivery.city" cssClass="input-large  form-control form-control-lg" path="customer.delivery.city" title="${msgShippingCity}"/>
 											    				</div> 
 											  			</div>
 													</div>
@@ -1185,7 +1185,7 @@ $(document).ready(function() {
 															<label><s:message code="label.customer.shipping.postalcode" text="Shipping postal code"/></label>
 											    				<div class="controls"> 
 											    				    <s:message code="NotEmpty.customer.shipping.postalCode" text="Shipping postal code should not be empty" var="msgShippingPostal"/>
-											      					<form:input id="deliveryPostalCode" cssClass="input-large required delivery-postalCode form-control form-control-lg" path="customer.delivery.postalCode" title="${msgShippingPostal}"/>
+											      					<form:input id="deliveryPostalCode" cssClass="input-large  delivery-postalCode form-control form-control-lg" path="customer.delivery.postalCode" title="${msgShippingPostal}"/>
 											    				</div> 
 											  			</div>
 													</div>
@@ -1199,7 +1199,7 @@ $(document).ready(function() {
 											    		<div class="controls"> 
 												       			<form:select cssClass="zone-list form-control" id="deliveryStateList" path="customer.delivery.zone"/>
 											                    <s:message code="NotEmpty.customer.shipping.stateProvince" text="Shipping State / Province is required" var="msgShippingState"/>
-											                    <form:input  class="input-large required form-control form-control-lg" id="deliveryStateProvince"  maxlength="100" name="shippingStateProvince" path="customer.delivery.stateProvince" title="${msgShippingState}"/> 
+											                    <form:input  class="input-large  form-control form-control-lg" id="deliveryStateProvince"  maxlength="100" name="shippingStateProvince" path="customer.delivery.stateProvince" title="${msgShippingState}"/>
 											    		</div> 
 											  		</div>
 											  		</div>

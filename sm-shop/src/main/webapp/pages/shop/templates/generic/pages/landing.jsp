@@ -19,7 +19,7 @@ response.setDateHeader ("Expires", -1);
 		<div class="slider-area">
 		<c:choose>
 		<c:when test="${requestScope.CONTENT['bannerImage']!=null}">
-			<sm:pageContent contentCode="bannerImage"/>
+		<%--	<sm:pageContent contentCode="bannerImage"/> --%>
 		</c:when>
 		<c:otherwise>
 <%-- 			
